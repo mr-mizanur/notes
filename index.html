@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Notes App</title>
+
+<link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+</head>
+
+<body class="bg-gray-100 min-h-screen flex justify-center items-center">
+
+<div class="card bg-base-100 shadow-xl w-full max-w-xl p-6">
+
+<h1 class="text-2xl font-bold text-center mb-6">My Notes</h1>
+
+<div class="flex gap-2 mb-4">
+<input 
+id="noteInput" 
+type="text" 
+placeholder="Write your note..." 
+class="input input-bordered w-full"
+/>
+
+<button 
+onclick="addNote()" 
+class="btn btn-primary">
+Add
+</button>
+</div>
+
+<ul id="notesList" class="space-y-3"></ul>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
